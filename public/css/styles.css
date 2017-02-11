@@ -30,6 +30,9 @@ body {
   body .mobileMenuIcon {
     display: none; }
 
+#mobileMenuWrapper {
+  display: none; }
+
 #mainMenuWrapper {
   border-left: 1px solid #32363d;
   display: table;
@@ -214,23 +217,55 @@ body {
       body a.mobileMenuIcon > div:after {
         top: auto;
         bottom: -10px; }
-  body #mainMenu {
-    position: relative;
-    text-align: left; }
-    body #mainMenu ul {
+    body a.mobileMenuIcon.active > div {
+      background: none; }
+      body a.mobileMenuIcon.active > div:before, body a.mobileMenuIcon.active > div:after {
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        bottom: 0;
+        top: 0;
+        width: 35px; }
+      body a.mobileMenuIcon.active > div:before {
+        -webkit-transform: rotate3d(0, 0, 1, 45deg);
+        transform: rotate3d(0, 0, 1, 45deg); }
+      body a.mobileMenuIcon.active > div:after {
+        -webkit-transform: rotate3d(0, 0, 1, -45deg);
+        transform: rotate3d(0, 0, 1, -45deg); }
+  body #mainMenuWrapper {
+    display: block; }
+    body #mainMenuWrapper #mainMenu {
       display: none; }
-      body #mainMenu ul li {
-        -webkit-writing-mode: horizontal-tb;
-        -ms-writing-mode: lr-tb;
-        writing-mode: horizontal-tb; }
-  body #mainMenu.active {
-    width: 165px; }
-    body #mainMenu.active ul li a {
-      padding: 10px 25px; }
-    body #mainMenu.active ul li.socialMedia {
-      display: block;
-      padding: 10px 25px;
-      text-align: center; } }
+  #mobileMenuWrapper {
+    height: 100%;
+    left: 0;
+    margin-right: 90px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 999; }
+    #mobileMenuWrapper #mobileMenu {
+      background: #272b33;
+      display: table;
+      height: 100%;
+      position: relative;
+      width: 100%; }
+      #mobileMenuWrapper #mobileMenu > div {
+        display: table-cell;
+        vertical-align: middle; }
+        #mobileMenuWrapper #mobileMenu > div ul {
+          list-style: none;
+          padding: 0 90px;
+          margin: 0; }
+          #mobileMenuWrapper #mobileMenu > div ul li a {
+            display: block;
+            padding: 10px 0; }
+          #mobileMenuWrapper #mobileMenu > div ul .socialMedia {
+            display: inline-block; }
+  #homepageWrapper {
+    padding: 30px 0; }
+    #homepageWrapper #introductionContent,
+    #homepageWrapper #projectWrapper {
+      padding: 30px 0; } }
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
