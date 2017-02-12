@@ -182,9 +182,13 @@ body {
     padding: 10px 0; } }
 
 @media only screen and (max-width: 1023px) {
+  body .pageWrapper {
+    padding: 60px 0; }
   body .columns {
+    float: none;
     padding-left: 60px;
-    padding-right: 60px; }
+    padding-right: 60px;
+    width: 100%; }
   body a.mobileMenuIcon {
     display: inline-block;
     height: 34px;
@@ -265,7 +269,12 @@ body {
     padding: 30px 0; }
     #homepageWrapper #introductionContent,
     #homepageWrapper #projectWrapper {
-      padding: 30px 0; } }
+      padding: 30px 0; }
+  #aboutWrapper #aboutMainContent img {
+    display: block;
+    margin-bottom: 30px; }
+  #pagination .columns {
+    padding: 0 0.9375em; } }
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome

@@ -5,7 +5,7 @@
 @stop
 
 @section('content')
-	<div id="projectDetailWrapper">
+	<div id="projectDetailWrapper" class="pageWrapper">
 		<div class="row">
 			<div class="large-11 medium-11 columns">
 				<div id="projectHeading">
